@@ -7,11 +7,11 @@ import UserContext from "../utils/UserContext";
 const RestaurantCards = (props) => {
   const data =useContext(UserContext);
   const { resData } = props;
-  //console.log(resData.info);
+  console.log("mock:",JSON.stringify(resData.info));
   const { name, cuisines, avgRating, costForTwo, sla, cloudinaryImageId } =
     resData?.info;
   return (
-    <div id="card" className=" m-4 w-[250px] bg-gray-200 hover:bg-gray-300 rounded-md p-4 "  >
+    <div id="card" data-testid="res-link" className=" m-4 w-[250px] bg-gray-200 hover:bg-gray-300 rounded-md p-4 "  >
       <img 
         className="rounded-md"
         src={CDN_URL + resData.info.cloudinaryImageId}

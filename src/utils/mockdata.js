@@ -1,4 +1,5 @@
-let Chennai =[
+let Bangalore =[
+  {info :{"id":"25620","name":"KFC","cloudinaryImageId":"RX_THUMBNAIL/IMAGES/VENDOR/2024/4/17/69e69c55-d2bb-4207-8310-131fc693f78a_25620.JPG","locality":"Intermediate Ring Road","areaName":"Ejipura","costForTwo":"₹400 for two","cuisines":["Burgers","Fast Food","Rolls & Wraps"],"avgRating":4.3,"parentId":"547","avgRatingString":"4.3","totalRatingsString":"10K+","sla":{"deliveryTime":20,"lastMileTravel":0.8,"serviceability":"SERVICEABLE","slaString":"20-25 mins","lastMileTravelString":"0.8 km","iconType":"ICON_TYPE_EMPTY"},"availability":{"nextCloseTime":"2024-08-10 23:00:00","opened":true},"badges":{},"isOpen":true,"type":"F","badgesV2":{"entityBadges":{"imageBased":{},"textBased":{},"textExtendedBadges":{}}},"aggregatedDiscountInfoV3":{"header":"20% OFF","subHeader":"UPTO ₹50"},"orderabilityCommunication":{"title":{},"subTitle":{},"message":{},"customIcon":{}},"differentiatedUi":{"displayType":"ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT","differentiatedUiMediaDetails":{"mediaType":"ADS_MEDIA_ENUM_IMAGE","lottie":{},"video":{}}},"reviewsSummary":{},"displayType":"RESTAURANT_DISPLAY_TYPE_DEFAULT","restaurantOfferPresentationInfo":{},"externalRatings":{"aggregatedRating":{"rating":"--"}},"ratingsDisplayPreference":"RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"}},
     {
       "info": {
         "id": "715114",
@@ -1809,4 +1810,4 @@ let Chennai =[
   ];
 
 
-  export default Chennai;
+  export default Bangalore;

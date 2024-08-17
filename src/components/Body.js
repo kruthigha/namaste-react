@@ -37,11 +37,11 @@ const Body = () => {
   const status = useOnlineSatus();
   if(!status) return <h1>Looks Like you are Offline! Please Check Your Internet Connection..</h1>
   const RestaurantCardsWithLabel = withLabel(RestaurantCards)
-  return ((res.length === 0)? <Shimmer/> : (<div className="body">
+  return ((res.length === 0)? <Shimmer/> : (<div className="body" >
         <div className="flex">
         <div id="search-bar">
         <input className="border border-solid border-black m-4"
-        placeholder="Search your cravings here..." type="text" value={input} onChange={(e)=>{
+        placeholder="Search your cravings here..." type="text" value={input} data-testid ="Search" onChange={(e)=>{
          setInput(e.target.value);
         }}/>
         <button id="filter-btn" className="px-4 py-1 bg-orange-400 m-4 rounded-sm" onClick={()=>{
@@ -49,20 +49,18 @@ const Body = () => {
           setFilres(filteredRestaurants);
 
         }}>Search</button>
-        
-       
-       
-        <button className="px-4 py-1 bg-orange-600 m-4 rounded-sm" onClick={()=>{
+        <button className="px-4 py-1 bg-orange-600 m-4 rounded-sm" data-testid="TRS" onClick={()=>{
                  
                  let data= res.filter((item)=>{ 
                     return item.info.avgRating > 4.3}
                  );
                  console.log(data.length);
-                 setRes(data);
+                 setFilres(data);
+                 console.log(res);
                          
 
         }
-        }>Top Reated Restaurant</button>
+        }>Top Rated Restaurant</button>
         <input placeholder="Enter User name here" onChange={(e)=>setUser(e.target.value)} value ={loggedInUser} className="border border-solid border-black m-4 h-6 px-4 py-1"/>
         </div>
         </div>
@@ -79,6 +77,9 @@ const Body = () => {
         </div>
     </div>));
 }
+// export const RestaurantCardsWithLabel =()=>{
+
+// }
 
 
 export default Body;

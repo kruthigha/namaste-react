@@ -61,3 +61,33 @@ camel_Case
     const[res,setRes]= arr;
     const res =arr[0];
     const setRes = arr[1];
+
+
+
+   #Redux Tool Kit
+   - install @reduxjs/toolkit & react-redux
+   - Build our own store
+   - connect store to app
+   - dispatch(action)
+   - selector(subscribing to the store)
+
+
+
+   #Types of testing
+
+   Manual Testing
+  - Unit Testing 
+  - Integration Testing
+   End2End Testing
+
+   #Setting up testEnv
+
+  - install react testing library
+  - install jest
+  - install babel dependencies
+  - configure babel.config.js
+  - configure parcel config file to disable parcels default babel transpilation
+  - jest > npx jest --init
+  - install jsdom library separately if you are using jest version>28 from docs of react testing lib under jest 28
+  - to make jsx work kindly install @babel/preset-react
+  - install @testing-library/jest-dom
