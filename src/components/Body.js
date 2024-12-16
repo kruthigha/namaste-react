@@ -61,7 +61,7 @@ const Body = () => {
 
         }
         }>Top Rated Restaurant</button>
-        <input placeholder="Enter User name here" onChange={(e)=>setUser(e.target.value)} value ={loggedInUser} className="border border-solid border-black m-4 h-6 px-4 py-1"/>
+        {/* <input placeholder="Enter User name here" onChange={(e)=>setUser(e.target.value)} value ={loggedInUser} className="border border-solid border-black m-4 h-6 px-4 py-1"/> */}
         </div>
         </div>
 
